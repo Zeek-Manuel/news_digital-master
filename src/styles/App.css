@@ -1,0 +1,91 @@
+@font-face { font-family: Poppins; src: url('/src/assets/Fonts/Poppins-Regular.ttf'); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+
+    --crisp-red: #fb3e58;
+    --crisp-blue: #0f79eb;
+    --crisp-blue-dark: #0a4c92;
+}
+
+body {
+    font-family: Poppins;
+    height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; }
+button { outline: none; border: none; }
+
+a, 
+button { transition: .2s ease; cursor: pointer; }
+
+/* ---- Containers */
+.container-lg { max-width: 1920px;  }
+.container-md { max-width: 1024px;  }
+.container-sm { max-width: 768px;  }
+
+.container-lg,
+.container-md,
+.container-sm { margin: 0 auto; }
+
+/* ---- Positioners */
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+.d-flex { display: flex; }
+.d-col { display: flex; flex-direction: column; }
+.d-row { display: flex; flex-direction: row; }
+
+.justify-start { justify-content: start; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.justify-around { justify-content: space-around; }
+.justify-end { justify-content: end; }
+
+.align-start { align-items: start; }
+.align-center { align-items: center; }
+.align-end { align-items: end; }
+
+.d-grid { display: grid; }
+
+.gap-sm { gap: .5rem; }
+.gap-md { gap: .95rem; }
+.gap-lg { gap: 1.5rem; }
+.gap-xl { gap: 1.95rem; }
+.gap-xxl { gap: 2.5rem; }
+.gap-xxxl { gap: 2.95rem; }
+
+.p-sm { padding: .5rem; }
+.p-md { padding: .95rem; }
+.p-lg { padding: 1.5rem; }
+.p-xl { padding: 1.95rem; }
+.p-xxl { padding: 2.5rem; }
+.p-xxxl { padding: 2.95rem; }
+
+/* ----- Icons */
+.icon-sm { width: 20px; height: 20px; }
+.icon-md { width: 35px; height: 35px; }
+.icon-lg { width: 50px; height: 50px; }
+.icon-xl { width: 60px; height: 60px; }
+
+/* ----- Fonts */
+.font-xs { font-size: .75rem; }
+.font-sm { font-size: .9rem; }
+.font-md { font-size: 1.25rem; }
+.font-lg { font-size: 1.5rem; }
+.font-xl { font-size: 2rem; }
+
+.font-dark { color: var(--primary-color); }
+.font-light { color: var(--secondary-color); }
+
+@media screen and (max-width: 1024px) {
+    /* ----- Fonts */
+    .font-xs { font-size: .65rem; }
+    .font-sm { font-size: .8rem; }
+    .font-md { font-size: 1.15rem; }
+    .font-lg { font-size: 1.4rem; }
+    .font-xl { font-size: 1.9rem; }
+}
