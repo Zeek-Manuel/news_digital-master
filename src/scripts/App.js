@@ -3,6 +3,7 @@ const navLinksContainer = document.querySelector('.nav-links')
 const mobileNavMenuLinksContainer = document.querySelector('.mobile-menu-links-container')
 const navMenButton = document.querySelector('.nav-menu-btn')
 const navMenuImage = document.getElementById('hamburger-menu')
+const mobileLink = document.querySelector('.mobileLinks')
 
 let navLinks = {
   className: "nav-links",
